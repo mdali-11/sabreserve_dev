@@ -14,7 +14,7 @@ const {bookingRouter} = require("./routes/booking.route")
 const {validator} =require("./middlewares/validator.middleware")
 const bodyParser = require("body-parser");
 // const {sponsoredContentRouter} = reuire("./routes/sponsoredContent.route")
-
+//willwork in dev environment
 
 
 const app =express()
