@@ -1,0 +1,214 @@
+.cake-page {
+  width: 80%;
+  min-height: 90vh;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 50px;
+  display: flex;
+  align-items: center; /* Align items to the top */
+  justify-content: center; /* Distribute space evenly */
+  gap: 20px;
+}
+
+.left {
+  width: 45%; /* Adjust width to fit both sections */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  width: 45%; /* Adjust width to fit both sections */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cake-images {
+  width: 100%; /* Adjust to fit within the left section */
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cake-details {
+  width: 100%; /* Adjust to fit within the right section */
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cake-details h2 {
+  color: #333;
+}
+
+.cake-details p {
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border: 2px solid #3498db;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: #27ae60;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #219d54;
+}
+
+.go-back-button {
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.go-back-button:hover {
+  background: #2980b9;
+}
+
+.legal-services-list {
+  padding: 0;
+  margin: 0;
+}
+
+.legal-services-list li {
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Call Button */
+.call-button {
+  background-color: #28a745;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+
+}
+
+.call-button a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.call-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  background-color: #25d366;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+
+}
+
+.whatsapp-button a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc5b;
+  transform: translateY(-2px);
+}
+a.view-details {
+  color: #ffffff;
+  /* background-color: #4a90e2; */
+  background-color: #5567c9;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+a.view-details:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .cake-page {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}

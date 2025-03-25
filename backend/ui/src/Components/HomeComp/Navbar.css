@@ -1,0 +1,114 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1500px;
+    padding: 0 24px;
+  }
+  
+  /* Logo */
+  .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  /* Menu icon for mobile */
+  .menu-icon {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Nav menu */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-item {
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-links:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+  
+  /* Mobile menu */
+  @media screen and (max-width: 960px) {
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 18px;
+      right: 24px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+  
+    .nav-menu.active {
+      left: 0;
+      opacity: 1;
+      z-index: 1;
+    }
+  
+    .nav-item {
+      margin: 0;
+    }
+  
+    .nav-links {
+      padding: 2rem
+    }
+}  
