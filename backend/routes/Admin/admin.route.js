@@ -34,10 +34,10 @@ adminRouter.post("/register", async (req, res) => {
         phone,
         countryCode,
         country,
-        companyName,
-        companyAddress,
-        serviceCategories,
-        roles
+        // companyName,
+        // companyAddress,
+        // serviceCategories,
+        // roles
       });
 
       await newAdmin.save();
